@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JavaScript/ms.js"></script>
+    <link href="CSS/mspaint.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+</head>
+<body bgcolor="lightgrey">
+    <div id="status">
+        <div id="btns">
+            <button id="flag" onclick="flag()"><img id="f" src="SVG/minesweeper/flag.png" width="60" height="60"/></button>
+            <button id="refresh" onclick="location.reload()">New game</button>
+            <button id="home" onclick="window.location = 'index.html'">Return to homepage</button>
+        </div>
+        <img id="guy" src="SVG/minesweeper/smiley.png" alt="statusError" width="120" height="120" />
+        <div id="timer">Time: <span id="time">0:1</span></div>
+        <div id="pbtime">Best time: <span id="pb"> </span></div>
+    </div>
+    <div id="game">
+        <table>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><title>15</title>
+    <link href="CSS/15style.css" rel="stylesheet"/>
+    <script src="JavaScript/15.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="heading">
+                <div id="name">15 puzzle</div>
+                <div id="hud">
+                    <div id="row">
+                        <div id="mCount">Moves count: <div id="moves">0</div></div>
+                        <div id="timer">Time: <div id="time">0:0</div></div>
+                    </div>
+                    <div style="margin-left:-20px;">
+                        <div id="bCount">The least moves: <div id="Bmoves">0</div></div>
+                        <div id="btimer">Best time: <div id="Btime">0:0</div></div>
+                    </div>
+                    
+                </div>
+                <div style="margin-top: 20px;">
+                    <button id="refresh" onclick="location.reload()">New game</button>
+                    <button id="home" onclick="window.location = 'index.html'">Return to homepage</button>
+                </div>
+            </div>
+            <div id="game-container">
+                <div class="grid-row" style="margin-top:0;"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div>
+                <div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div>
+                <div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div>
+                <div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div><div class="box" onclick="move(this)"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2048</title>
+        <link href='CSS/2048style.css' rel='stylesheet'/>
+        <script src="JavaScript/2048.js"></script>
+        <script src="JavaScript/2048main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="heading">
+                <div id="name">2048</div>
+                <div id="score">Score: 0</div><div id="highscore">Best: <span id="pb">0</span></div>
+                <button id="refresh" onclick="location.reload()">New game</button>
+                <button id="home" onclick="window.location = 'index.html'">Return to homepage</button>
+            </div>
+            <div id="game-container">
+                <div class="grid-row" style="margin-top:0;"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+                <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell" style="margin-right:0;"></div></div>
+            </div>
+        </div>
+    <body>
+</html>

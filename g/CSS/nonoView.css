@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    background-color: rgb(112, 114, 204);
+}
+#title,#timer,#pb{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#timer,#pb{
+    font-size: 35px;
+}
+#pb{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#board-container{
+    width:50%;
+    height:50%;
+    margin-bottom: 30px;
+}
+.row{
+    height:50px;
+    display:flex;
+}
+.square{
+    height:48px;
+    width:48px;
+    border: 1px black solid;
+    cursor:pointer;
+}
+#game{
+    height:100%;
+    width: 100%;
+}
+#board{
+    width:100%;
+}
+#numbers-row{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+#numbers-column{
+    display:flex;
+}
+.numColumn,.numRow{
+    display: flex;
+    width:50px;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+.numRow{
+    flex-direction: row;
+    height:50px;
+    width: 100%;
+}
+.num{
+    height:50px;
+    width:50px;
+}
+.square:hover{
+    background-color: rgba(0, 124, 155, 0.719);
+}
+#container-game{
+    display:flex;
+}
+#btns{
+    width:20%;
+    margin:auto;
+    display:flex;
+}
+button{
+    border:1px solid black;
+    background:lightblue;
+    width:100%;
+    height:20%;
+    padding:12px;
+    margin:10px;
+    font-weight: bolder;
+    border-radius: 7% 7%;
+}
+button:hover{
+    cursor:pointer;
+    background-color:hsla(0, 0%, 50%, 0.5);
+}

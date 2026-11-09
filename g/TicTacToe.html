@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="JavaScript/ttt.js"></script>
+    <link href="CSS/ttt.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body id="back">
+    <h1 id="nadpis">TIC TAC TOE</h1>
+    <div id="hud-content">
+        <span id="xwins">X: 0</span>
+        <span id="owins">O: 0</span>
+        <button class = 'hud' id="reset" onclick="resetScore()">Reset Score</button>
+        <button class='hud' id="refresh" onclick="location.reload()">New game</button>
+        <button class = 'hud' id="home" onclick="window.location = 'index.html'">Return to homepage</button>
+    </div>
+    <div id="game">
+        <table>
+            <tr><td id="td11"><button class='game-btn' onclick="play(0);"></button></td><td id="td12"><button class='game-btn' onclick="play(1);"></button></td><td id="td13"><button class='game-btn' onclick="play(2);"></button></td></tr>
+            <tr><td id="td21"><button class='game-btn' onclick="play(3);"></button></td><td id="td22"><button class='game-btn' onclick="play(4);"></button></td><td id="td23"><button class='game-btn' onclick="play(5);"></button></td></tr>
+            <tr><td id="td31"><button class='game-btn' onclick="play(6);"></button></td><td id="td32"><button class='game-btn' onclick="play(7);"></button></td><td id="td33"><button class='game-btn' onclick="play(8);"></button></td></tr>
+        </table>
+    </div>
+    <div id="vysledek">
+    </div>
+</body>
+</html>

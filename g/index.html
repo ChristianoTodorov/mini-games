@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games.com</title>
+    <script src="JavaScript/main.js"></script>
+    <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="title">Games</h1>
+        </header>
+        <span>Welcome to this site!<br />Feel free to choose any game to play.</span>
+        <button onclick="let i = setInterval(function(){changeLightMode(i)},5)">Change the light mode</button>
+        <div id="games">
+            <div class="row"><a href="15.html">
+                    <div class="box"><img src="imgs/15.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Puzzle game 15</h2>
+                        <p>In this popular puzzle game the objective is to line up every number in the correct order
+                            from 1 to 15. To achieve even better time you have the option to play with your keyboard.</p>
+                    </div>
+                </a>
+                <a href="2048game.html">
+                    <div class="box"><img src="imgs/2048.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>2048</h2>
+                        <p>The game 2048 is a simple game in which the player has to slide all the numbers in such directions, so he gets the number 2048 by combining two boxes with the same number.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="row"><a href="Nono.html">
+                    <div class="box"><img src="imgs/nono.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Nonogram</h2>
+                        <p>In order to solve and win this game, your objective is to find every box. To do that, you have numbers in each row and column indicating the number of consecutive boxes occurring in the respective row or column.</p>
+                    </div>
+                </a>
+                <a href="SudokuSolver.html">
+                    <div class="box"><img src="imgs/sudoku.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Sudoku</h2>
+                        <p>Sudoku is an infamous game in which the ultimate objective is to fill all the numbers from 1 to 9 without any repetitions in a row, column or 3x3 grid. Alternatively you have the option to solve any sudoku with a click of a button.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="row"><a href="Snake.html">
+                    <div class="box"><img src="imgs/snake.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Snake</h2>
+                        <p>The objective of this game is very simple. Eat as much apples as possible, but be careful not to bite yourself.</p>
+                    </div>
+                </a>
+                <a href="minesweeper.html">
+                    <div class="box"><img src="imgs/ms.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Minesweeper</h2>
+                        <p>Find every mine on the field. The numbers represent the number of mines adjacent to them.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a href="TicTacToe.html" id="ttt">
+                    <div class="box"><img src="imgs/ttt.png" width="80%" height="90%" alt="err" /></div>
+                    <div class="text">
+                        <h2>Tic Tac Toe</h2>
+                        <p>In a game of Tic tac toe each player's objective is to place three of his symbols (X or O) in a line. Play against a friend or an AI player.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

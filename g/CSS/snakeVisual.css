@@ -1,0 +1,85 @@
+body{
+    background-color: goldenrod;
+    width: 99%;
+    font-family:"Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+#playground{
+    border: 2mm solid white;
+    position: relative;
+    background: greenyellow;
+    width: 1200px;
+    height: 1200px;
+    margin-left: 33%;
+    margin-top:-220px;
+}
+#snake{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    background-color: #00afff;
+}
+#name{
+    animation-name: nameColor;
+    font-weight: bold;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    float: left;
+    margin-top: 20%;
+    font-size: 150px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+.row{
+    display: flex;
+}
+.square{
+    height: 50px;
+    width: 50px;
+}
+#apple{
+    height: 50px;
+    width: 50px;
+    position:absolute;
+}
+#score,#record{
+    color:white;
+    font-size: 70px;
+    position: absolute;
+    margin-left: 30px;
+}
+#record{
+    margin-top: 5%;
+}
+button{
+    border:1px solid black;
+    background:yellow;
+    width:170px;
+    height:20%;
+    padding:12px;
+    margin:10px;
+    position:relative;
+    margin-top:250px;
+    font-weight: bolder;
+    border-radius: 7% 7%;
+}
+button:hover{
+    cursor:pointer;
+    background-color:hsla(0, 0%, 50%, 0.5);
+}
+
+@keyframes nameColor {
+    0% { color: red;}
+    8.3% { color: orange;}
+    16.6% { color: yellow;}
+    25% { color: greenyellow;}
+    33.3% { color: lightskyblue;}
+    41.6% { color: blue;}
+    50% { color: blueviolet;}
+    58.3% { color: blue;}
+    66.6% { color: lightskyblue;}
+    75% { color:greenyellow;}
+    83.3% { color:yellow;}
+    92% { color:orange;}
+    100% { color:red;}
+}

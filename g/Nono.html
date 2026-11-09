@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nonogram</title>
+    <script defer src="JavaScript/Nonogram.js"></script>
+    <link rel="stylesheet" href="CSS/nonoView.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="game">
+        <header>
+          <h1 id="title">Nonogram</h1>
+          <div id="timer">Time: <span id="time">0:0</span></div>
+          <div id="pb">Best time: <span id="pbtime"></span></div>
+          <div id="btns">
+            <button id="refresh" onclick="location.reload()">New game</button>
+            <button id="home" onclick="window.location = 'index.html'">Return to homepage</button>
+          </div>
+        </header>
+        <div id="board-container">
+            <div id="numbers-column"></div>
+            <div id="container-game">
+                <div id="numbers-row"></div>
+                <div id="board"></div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
